@@ -1,0 +1,542 @@
+/* Default css file for jemdoc. */
+
+html {
+    background-color: #f0f0f0; /* 灰色背景 */
+}
+body {
+    font-family: Arial, sans-serif;
+    width: 700px;
+    background-color: #ffffff;
+    margin: 30px auto;
+    padding: 10px 30px;
+    text-align: center;
+    color: #333;
+}
+.container {
+    display: flex;
+    justify-content: space-between; /* 确保左右分布 */
+    align-items: center;
+    margin-top: 20px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.info h1 {
+    text-align: left;
+    font-size: 24px;
+    color: #224b8d;
+    margin: 0;
+}
+.underline {
+    width: 100%; /* 设置线条宽度为父容器的60% */
+    height: 2px;
+    background-color: #333;
+    margin: 5px 0 15px 0; /* 控制上下间距 */
+}
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.contact-info p {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.contact-info p i {
+    margin-right: 8px;
+    color: #8B0000;
+}
+.contact-info p a {
+    color: inherit;
+    text-decoration: none;
+}
+.contact-info p a:hover {
+    text-decoration: underline;
+}
+.photo {
+    display: flex;
+    justify-content: flex-end;
+    flex-shrink: 0; /* 防止图片缩小 */
+}
+.photo img {
+    max-width: 100px; /* 设置最大宽度 */
+    width: 100%; /* 让图片自适应 */
+    height: auto;
+    margin-top: 10px;
+    border-radius: 50%; /* 圆形图片 */
+}
+
+
+
+.title {
+    text-align: left;
+    font-size: 18px;
+    color: #224b8d;
+    font-weight: bold;
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
+.underline {
+    margin-bottom: 5px;
+    flex-grow: 1; /* 占满剩余空间 */
+    height: 3px; /* 下划线厚度 */
+    background: linear-gradient(to right, #b3c995, transparent); /* 渐变颜色 */
+}
+
+.biography p {
+    text-align: justify;
+    font-size: 12px;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.news-item {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.news-date {
+    padding: 5px;
+    font-weight: bold;
+    color: #333;
+}
+.news-content {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.news-content i {
+    color: #8B0000; /* Dark red color for icons */
+    margin-right: 8px;
+}
+
+
+h3 {
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+.research {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.research ul {
+    list-style-type: none;
+    padding: 0;
+}
+.research li {
+    font-size:16px;
+    display:flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.circle {
+    width: 18px;
+    height: 18px;
+    background-color: #8B0000; /* Dark red */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.research-item {
+    font-size: 14px;
+    flex: 1;
+}
+.research-item b {
+    font-weight: bold;
+}
+.research-item i {
+    font-style: italic;
+}
+
+.awards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.award-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+.award-date {
+    font-weight: bold;
+    color: #333;
+    min-width: 80px; /* 固定宽度，确保对齐 */
+    text-align: right;
+}
+.award-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.award-entry {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.award-entry i {
+    color: #8B0000; /* 暗红色图标 */
+}
+.award-entry b {
+    font-weight: bold;
+}
+
+
+
+
+
+
+#layout-menu {
+    background: #f6f6f6;
+    border: 1px solid #dddddd;
+    padding-top: 0.5em;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 1.0em;
+    width: auto;
+    white-space: nowrap;
+    text-align: left;
+    vertical-align: top;
+}
+
+#layout-menu td {
+    background: #f4f4f4;
+    vertical-align: top;
+}
+
+#layout-content {
+    padding-top: 0.0em;
+    padding-left: 1.0em;
+    padding-right: 1.0em;
+    border: none;
+    background: white;
+    text-align: left;
+    vertical-align: top;
+}
+
+#layout-menu a {
+    line-height: 1.5em;
+    margin-left: 0.5em;
+}
+
+tt {
+    background: #ffffdd;
+}
+
+pre, tt {
+    font-size: 90%;
+    font-family: monaco, monospace;
+}
+
+a, a > tt {
+    color: #224b8d;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 1px gray dotted;
+}
+
+#layout-menu a.current:link, #layout-menu a.current:visited {
+    color: #022b6d;
+    border-bottom: 1px gray solid;
+}
+#layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
+    color: #527bbd;
+    text-decoration: none;
+}
+#layout-menu a:hover {
+    text-decoration: none;
+}
+
+div.menu-category {
+    border-bottom: 1px solid gray;
+    margin-top: 0.8em;
+    padding-top: 0.2em;
+    padding-bottom: 0.1em;
+    font-weight: bold;
+}
+
+div.menu-item {
+    padding-left: 16px;
+    text-indent: -16px;
+}
+
+div#toptitle {
+    padding-bottom: 0.2em;
+    margin-bottom: 1.5em;
+    /*border-bottom: 3px double gray;*/
+}
+
+/* Reduce space if we begin the page with a title. */
+div#toptitle + h2, div#toptitle + h3 {
+    margin-top: 0em;
+}
+
+div#subtitle {
+    margin-top: 0.0em;
+    margin-bottom: 0.0em;
+    padding-top: 0em;
+    padding-bottom: 0.1em;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+
+h1, h3 {
+    color: #527bbd;
+    margin-top: 0.7em;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.2em;
+    line-height: 1.0;
+    padding-top: 0.5em;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+h1 {
+    font-size: 165%;
+    padding-bottom: 0.3em;
+}
+
+h2 {
+    padding-top: 0.8em;
+    font-size: 125%;
+}
+
+h2 + h3 {
+    padding-top: 0.2em;
+}
+
+h3 {
+    font-size: 110%;
+    border-bottom: none;
+}
+
+p {
+    margin-top: 0.0em;
+    margin-bottom: 0.8em;
+    padding: 0;
+    line-height: 1.3;
+}
+
+pre {
+    padding: 0;
+    margin: 0;
+}
+
+div#footer {
+    font-size: small;
+    border-top: 1px solid #c0c0c0;
+    padding-top: 0.1em;
+    margin-top: 4.0em;
+    color: #c0c0c0;
+}
+
+div#footer a {
+    color: #80a0b0;
+}
+
+div#footer-text {
+    float: left;
+    padding-bottom: 8px;
+}
+
+ul, ol, dl {
+    margin-top: 0.2em;
+    padding-top: 0;
+    margin-bottom: 0.8em;
+}
+
+dt {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+
+dl {
+    margin-left: 20px;
+}
+
+dd {
+    color: #222222;
+}
+
+dd > *:first-child {
+    margin-top: 0;
+}
+
+ul {
+    list-style-position: outside;
+    list-style-type: square;
+}
+
+p + ul, p + ol {
+    margin-top: -0.5em;
+}
+
+
+ol {
+    list-style-position: outside;
+    list-style-type: decimal;
+}
+
+li p, dd p {
+    margin-bottom: 0.3em;
+}
+
+
+ol ol {
+    list-style-type: lower-alpha;
+}
+
+ol ol ol {
+    list-style-type: lower-roman;
+}
+
+p + div.codeblock {
+    margin-top: -0.6em;
+}
+
+div.codeblock, div.infoblock {
+    margin-right: 0%;
+    margin-top: 1.2em;
+    margin-bottom: 1.3em;
+}
+
+div.blocktitle {
+    font-weight: bold;
+    color: #cd7b62;
+    margin-top: 1.2em;
+    margin-bottom: 0.1em;
+}
+
+div.blockcontent {
+    border: 1px solid silver;
+    padding: 0.3em 0.5em;
+}
+
+div.infoblock > div.blockcontent {
+    background: #ffffee;
+}
+
+div.blockcontent p + ul, div.blockcontent p + ol {
+    margin-top: 0.4em;
+}
+
+div.infoblock p {
+    margin-bottom: 0em;
+}
+
+div.infoblock li p, div.infoblock dd p {
+    margin-bottom: 0.5em;
+}
+
+div.infoblock p + p {
+    margin-top: 0.8em;
+}
+
+div.codeblock > div.blockcontent {
+    background: #f6f6f6;
+}
+
+span.pycommand {
+    color: #000070;
+}
+
+span.statement {
+    color: #008800;
+}
+span.builtin {
+    color: #000088;
+}
+span.special {
+    color: #990000;
+}
+span.operator {
+    color: #880000;
+}
+span.error {
+    color: #aa0000;
+}
+span.comment, span.comment > *, span.string, span.string > * {
+    color: #606060;
+}
+
+@media print {
+    #layout-menu { display: none; }
+}
+
+#fwtitle {
+    margin: 2px;
+}
+
+#fwtitle #toptitle {
+    padding-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#layout-content h1:first-child, #layout-content h2:first-child, #layout-content h3:first-child {
+    margin-top: -0.7em;
+}
+
+div#toptitle h1, #layout-content div#toptitle h1 {
+    margin-bottom: 0.0em;
+    padding-bottom: 0.1em;
+    padding-top: 0;
+    margin-top: 0.5em;
+    border-bottom: none;
+}
+
+img.eq {
+    padding: 0;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+    margin: 0;
+}
+
+img.eqwl {
+    padding-left: 2em;
+    padding-top: 0.6em;
+    padding-bottom: 0.2em;
+    margin: 0;
+}
+
+
+tr.heading {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+img {
+    border: none;
+}
+
+table.imgtable, table.imgtable td {
+    border: none;
+    text-align: left;
+}
