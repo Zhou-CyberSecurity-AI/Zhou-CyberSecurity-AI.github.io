@@ -138,7 +138,7 @@ h3 {
     padding: 0;
 }
 .research li {
-    font-size:16px;
+    font-size:14px;
     display:flex;
     align-items: flex-start;
     margin-bottom: 15px;
@@ -188,7 +188,7 @@ h3 {
     text-align: right;
 }
 .award-content {
-    font-size: 12px;
+    font-size: 14px;
     display: flex;
     flex-direction: column;
     gap: 5px;
