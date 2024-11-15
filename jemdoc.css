@@ -185,6 +185,7 @@ h3 {
     text-align: right;
 }
 .award-content {
+    font-size: 12px;
     display: flex;
     flex-direction: column;
     gap: 5px;
