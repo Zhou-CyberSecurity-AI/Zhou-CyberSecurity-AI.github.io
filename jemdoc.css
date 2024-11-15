@@ -2,6 +2,7 @@
 
 html {
     background-color: #f0f0f0; /* 灰色背景 */
+    font-size: 16px;
 }
 body {
     font-family: Arial, sans-serif;
@@ -104,6 +105,7 @@ body {
     gap: 10px;
 }
 .news-date {
+    font-size: 14px;
     padding: 5px;
     font-weight: bold;
     color: #333;
@@ -179,6 +181,7 @@ h3 {
     gap: 15px;
 }
 .award-date {
+    font-size: 14px;
     font-weight: bold;
     color: #333;
     min-width: 80px; /* 固定宽度，确保对齐 */
